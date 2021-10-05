@@ -61,7 +61,7 @@ a:active {
   color: #0645ad;
 }
 
-#button {
+.button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #000000;
@@ -74,7 +74,7 @@ a:active {
   transition: 0.2s opacity;
 }
 
-#button:hover {
+.button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
