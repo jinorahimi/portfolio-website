@@ -16,8 +16,10 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <a href="index.html">Jino Rahimi</a>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Jino Rahimi</a>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -29,66 +31,67 @@
   </header>
 
   <!-- For the hero section -->
-  <div>
-    <div id="intro">
+  <div id="hero">
+    <div class="container">
       <h2>I’m a UX designer with a background as an arts administrator, researcher, and educator.</h2>
     </div>
 
-    <!-- For my projects -->
-    <div id="projects-list">
-      <div>
+    <div id="work">
+      <!-- For my projects -->
+      <div class="container">
         <div>
-          <!-- open row that holds (2) columns for project -->
-          <div>
-            <!-- open first column (used for image) -->
-            <picture>
-              <source srcset="img/cha-ching/cha-ching mockup@1x.jpg" media="(max-width:767px)">
-              <img src="img/cha-ching/cha-ching mockup@2x.jpg" alt="Cha-Ching Mockup">
-            </picture>
-          </div><!-- end first column -->
-          <div>
-            <!-- open second column (used for text) -->
-            <h3>Cha-Ching</h3><!-- heading for the project -->
-            <p>
-              <!-- open paragraph -->
-              UX/UI design for a native mobile peer-to-peer payments application
-            </p><!-- end paragraph -->
-            <a href="cha-ching.html" class="button">View Case Study</a><!-- button or link label -->
-          </div><!-- end second column -->
-        </div><!-- end row that holds (2) columns for project -->
-      </div>
+          <div class="row">
+            <!-- open row that holds (2) columns for project -->
+            <div>
+              <!-- open first column (used for image) -->
+              <picture>
+                <source srcset="img/cha-ching/cha-ching mockup@1x.jpg" media="(max-width:767px)">
+                <img src="img/cha-ching/cha-ching mockup@2x.jpg" alt="Cha-Ching Mockup">
+              </picture>
+            </div><!-- end first column -->
+            <div>
+              <!-- open second column (used for text) -->
+              <h3>Cha-Ching</h3><!-- heading for the project -->
+              <p>
+                <!-- open paragraph -->
+                UX/UI design for a native mobile peer-to-peer payments application
+              </p><!-- end paragraph -->
+              <a href="cha-ching.html" class="button">View Case Study</a><!-- button or link label -->
+            </div><!-- end second column -->
+          </div><!-- end row that holds (2) columns for project -->
+        </div>
 
-      <div>
         <div>
-          <!-- open row that holds (2) columns for project -->
-          <div>
-            <!-- open first column (used for image) -->
-            <picture>
-              <source srcset="img/artguide/artguide mockup@1x.jpg" media="(max-width:767px)">
-              <img src="img/artguide/artguide mockup@2x.jpg" alt="artguide Mockup">
-            </picture>
-          </div><!-- end first column -->
-          <div>
-            <!-- open second column (used for text) -->
-            <h3>artguide</h3><!-- heading for the project -->
-            <p>
-              <!-- open paragraph -->
-              UI redesign for a responsive web application
-            </p><!-- end paragraph -->
-            <a href="" class="button">View Case Study</a><!-- button or link label -->
-          </div><!-- end second column -->
-        </div><!-- end row that holds (2) columns for project -->
+          <div class="row">
+            <!-- open row that holds (2) columns for project -->
+            <div>
+              <!-- open first column (used for image) -->
+              <picture>
+                <source srcset="img/artguide/artguide mockup@1x.jpg" media="(max-width:767px)">
+                <img src="img/artguide/artguide mockup@2x.jpg" alt="artguide Mockup">
+              </picture>
+            </div><!-- end first column -->
+            <div>
+              <!-- open second column (used for text) -->
+              <h3>artguide</h3><!-- heading for the project -->
+              <p>
+                <!-- open paragraph -->
+                UI redesign for a responsive web application
+              </p><!-- end paragraph -->
+              <a href="" class="button">View Case Study</a><!-- button or link label -->
+            </div><!-- end second column -->
+          </div><!-- end row that holds (2) columns for project -->
+        </div>
+
       </div>
     </div>
 
     <!-- For the footer  -->
     <footer id="contact">
-      <div>
+      <div class="container">
         <h2>Get in Touch</h2>
-        <div>
-          <p>You can reach me via email at <a href="mailto:jino.rahimi@gmail.com">jino[dot]rahimi[at]gmail.com</a></p>
-        </div>
-        <div>
+        <a href="mailto:jino.rahimi@gmail.com" class="button">Email me</a><!-- button or link label -->
+        <div class="row">
           <!--Social Media Layout and Placeholders-->
           <a href="https://www.linkedin.com/in/jino-rahimi/" target="_blank">
             <svg height="5%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="5%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +111,7 @@
           </a>
         </div>
         <div>
-          <p>Copyright Jino Rahimi 2021</p>
+          <h5>Copyright Jino Rahimi, 2021</h5>
         </div>
       </div>
     </footer>

@@ -16,8 +16,10 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <a href="index.html">Jino Rahimi</a>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Jino Rahimi</a>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -29,75 +31,78 @@
   </header>
 
   <!-- For the hero section -->
-  <div>
-    <div>
-      <h1>About</h1>
-    </div>
-
-    <div>
+  <div id="hero">
+    <div class="container">
       <div>
-        <!-- open first column (used for image) -->
-        <picture>
-          <source srcset="img/headshot/Headshot@1x.jpg" media="(max-width:767px)">
-          <img src="img/headshot/Headshot@2x.jpg" alt="Profile Photo">
-        </picture>
-      </div><!-- end first column -->
-
-      <div>
-        <h2>My Story</h2>
-        <p>I’m a UX designer with a background in arts administration, research, and education and experience in a variety of nonprofit and commercial organizations. I have over 6 years of experience working directly with artists and audiences from
-          diverse backgrounds in the Middle East, Europe, and North America. In my previous roles, I supported art institutions in developing exhibitions, public programs, publications, international collaborations, and community engagement
-          strategies that forge productive relationships between artists and their publics.</p>
-        <p>My experience working with diverse audiences inspired me to pursue a career in UX Design and focus on designing solutions that respond to user’s needs. The work that I do as an arts administrator, researcher, and UX designer are
-          inextricably intertwined and inform each other. My background as a curator and educator strengthens my critical thinking, arms me with empathic listening skills, and prepares me to develop products and services that are engaging and
-          responsive.</p>
-        <p>I hope we can connect soon!</p>
-        <a href="files/Jino Rahimi_ Resume.pdf" target="_blank" class="button">Download Resume</a>
+        <h1>About</h1>
       </div>
 
       <div>
-        <h2>Skills and Tools</h2>
         <div>
-          <h3>Relevant Skills</h3>
-          <ul>
-            <li>
-              <p>User Research (Competitor analysis, user interviews, personas, user journey maps,
-                and user flows)</p>
-            </li>
-            <li>
-              <p>User Testing (Usability and Preference testing)</p>
-            </li>
-            <li>
-              <p>Effective Time Management Skills (Ability to manage multiple projects
-                simultaneously, maintain perspective, and prioritize tasks accordingly)</p>
-            </li>
-            <li>
-              <p>Exceptional critical thinking, organizational, and problem-solving skills</p>
-            </li>
-          </ul>
+          <!-- open first column (used for image) -->
+          <picture>
+            <source srcset="img/headshot/Headshot@1x.jpg" media="(max-width:767px)">
+            <img src="img/headshot/Headshot@2x.jpg" alt="Profile Photo">
+          </picture>
+        </div><!-- end first column -->
+
+        <div>
+          <h2>My Story</h2>
+          <p>I’m a UX designer with a background in arts administration, research, and education and experience in a variety of nonprofit and commercial organizations. I have over 6 years of experience working directly with artists and audiences from
+            diverse backgrounds in the Middle East, Europe, and North America. In my previous roles, I supported art institutions in developing exhibitions, public programs, publications, international collaborations, and community engagement
+            strategies that forge productive relationships between artists and their publics.</p>
+          <p>My experience working with diverse audiences inspired me to pursue a career in UX Design and focus on designing solutions that respond to user’s needs. The work that I do as an arts administrator, researcher, and UX designer are
+            inextricably intertwined and inform each other. My background as a curator and educator strengthens my critical thinking, arms me with empathic listening skills, and prepares me to develop products and services that are engaging and
+            responsive.</p>
+          <p>I hope we can connect soon!</p>
+          <a href="files/Jino Rahimi_ Resume.pdf" target="_blank" class="button">Download Resume</a>
         </div>
+
         <div>
-          <h3>Tools I Use</h3>
-          <ul>
-            <li>
-              <p>Design & Prototyping (Sketch, InVision, Figma, and Balsamiq)</p>
-            </li>
-            <li>
-              <p>Video editing and Graphic design (Adobe InDesign, Premiere Pro, and Photoshop)</p>
-            </li>
-          </ul>
+          <h2>Skills and Tools</h2>
+          <div>
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>
+                <p>User Research (Competitor analysis, user interviews, personas, user journey maps,
+                  and user flows)</p>
+              </li>
+              <li>
+                <p>User Testing (Usability and Preference testing)</p>
+              </li>
+              <li>
+                <p>Effective Time Management Skills (Ability to manage multiple projects
+                  simultaneously, maintain perspective, and prioritize tasks accordingly)</p>
+              </li>
+              <li>
+                <p>Exceptional critical thinking, organizational, and problem-solving skills</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>
+                <p>Design & Prototyping (Sketch, InVision, Figma, and Balsamiq)</p>
+              </li>
+              <li>
+                <p>Video editing and Graphic design (Adobe InDesign, Premiere Pro, and Photoshop)</p>
+              </li>
+              <li>
+                <p>Familiarity with HTML and CSS</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- For the footer  -->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Get in Touch</h2>
-      <div>
-        <p>You can reach me via email at <a href="mailto:jino.rahimi@gmail.com">jino[dot]rahimi[at]gmail.com</a></p>
-      </div>
-      <div>
+      <a href="mailto:jino.rahimi@gmail.com" class="button">Email me</a><!-- button or link label -->
+      <div class="row">
         <!--Social Media Layout and Placeholders-->
         <a href="https://www.linkedin.com/in/jino-rahimi/" target="_blank">
           <svg height="5%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="5%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +122,7 @@
         </a>
       </div>
       <div>
-        <p>Copyright Jino Rahimi 2021</p>
+        <h5>Copyright Jino Rahimi, 2021</h5>
       </div>
     </div>
   </footer>
