@@ -1,3 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  max-height: 150px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -8,6 +26,16 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  padding: 0 0 20px 0;
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4 {
@@ -34,31 +62,38 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: .8em;
+  font-weight: 300;
+}
+
 img {
   width: 100%;
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #000000;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #0645ad;
+  color: #ffffff;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #0645ad;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .button {
@@ -74,8 +109,73 @@ a:active {
   transition: 0.2s opacity;
 }
 
+.button:visited {
+  text-decoration: none;
+}
+
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
+  text-decoration: underline;
+}
+
+.button:active {
+  text-decoration: underline;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+  font-size: 1.75em;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px 0 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000000;
+}
+
+nav>ul>li>a:visited {
   text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+  text-decoration: underline;
+}
+
+nav>ul>li>a:focus {
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  padding-top: 150px;
+  width: 100%;
 }
