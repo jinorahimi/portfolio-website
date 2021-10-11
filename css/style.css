@@ -184,60 +184,6 @@ nav {
   width: 100%;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(-50px, -180px);
-  }
-
-  to {
-    transform: translate(300px, -180px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(-50px, -180px);
-  }
-
-  to {
-    transform: translate(-300px, -180px);
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-back {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-front {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -272,8 +218,12 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  #about-page h2 {
+    margin-top: 50px;
+  }
+
   #about-page h3 {
-    margin-top
+    margin-top: 0;
   }
 }
 
