@@ -5,12 +5,10 @@
 header {
   background-color: #000000;
   color: #ffffff;
-  text-align: center;
   padding: 10px;
   margin: 0 auto;
   position: fixed;
   width: 100%;
-  max-height: 150px;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
@@ -71,6 +69,12 @@ img {
   width: 100%;
 }
 
+figure {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -119,7 +123,7 @@ a:active {
 }
 
 .button:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Layout styling */
@@ -133,17 +137,14 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   font-size: 1.75em;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -154,33 +155,58 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav>ul>li>a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav>ul>li>a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav>ul>li>a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li:not(:last-child) {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 255);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 #hero {
-  padding-top: 150px;
+  padding-top: 100px;
   width: 100%;
 }
 
 #about-page {
-  padding-top: 150px;
+  padding-top: 100px;
   width: 100%;
 }
 
@@ -190,7 +216,11 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 4px;
+  }
+
+  .row {
+    margin: 50px 0;
   }
 
   nav {
@@ -207,9 +237,35 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle.responsive li:not(:last-child) {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
   [class*="col-"] {
     float: left;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   .row::after {
