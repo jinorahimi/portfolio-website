@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>artguide</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <script src="https://kit.fontawesome.com/26bbf165b3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- For the header -->
+  <header>
+    <!-- For the navigation -->
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Jino Rahimi</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- For the hero section -->
+  <div id="artguide-page">
+    <div id="hero">
+      <div class="container">
+        <div>
+          <h1>artguide Redesign</h1>
+        </div>
+
+        <div>
+          <picture>
+            <source srcset="img/artguide/Mockup@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/Mockup@2x.jpg" alt="artguide Mockup">
+          </picture>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Role</h2>
+            <p>UX/UI Designer</p>
+          </div>
+          <div class="col-md-6">
+            <h2>Tools</h2>
+            <p>Sketch, InVision, Whimsical, Principle</p>
+          </div>
+        </div>
+
+        <div class="row" style="background-color:#EEEEEE;">
+          <div class="col-md-6">
+            <h2>Context</h2>
+          </div>
+          <div class="col-md-6">
+            <p>artguide users need a fully searchable database that provides easy access to the best events for contemporary art and enables them to access a handy art guide for any city. The current tool for doing so creates a frustrating experience
+              for art enthusiast. </p>
+            <p>It is difficult for users to filter and sort their search and keep track of exhibitions they would like to see. There are multiple menus and the product relies heavily on textual information for navigation, creating a counterintuitive
+              user experience. The solution has therefore had a negative impact on the number of people using the existing responsive web product.</p>
+          </div>
+        </div>
+
+        <div class="row" style="background-color:#EEEEEE;">
+          <div class="col-md-6">
+            <h2>Objective</h2>
+          </div>
+          <div class="col-md-6">
+            <p>My goal with this project was to redesign artguide searchable database of current art events to provide art enthusiasts with a more usable experience finding contemporary art exhibitions. My focus was mainly in making the search
+              feature more intuitive and simple. In addition, I created visual icons for my design to help users quickly and easily identify the features they need.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Who</h2>
+          </div>
+          <div class="col-md-6">
+            <p>Contemporary art enthusiasts as well as professionals in the art field that are looking for current art exhibitions in any city they may visit.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>What</h2>
+          </div>
+          <div class="col-md-6">
+            <p>The responsive web application artguide, which is an exclusive feature of artforum.com. The product has a searchable database of exhibitions, cities, and venues. Users can browse the database, select a venue or event to find all the
+              available information, share an event listing with friends, and save an event to their personalized artguide.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>When</h2>
+          </div>
+          <div class="col-md-6">
+            <p>The responsive web product can be used any time to access a handy art guide at user’s fingertips.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Where</h2>
+          </div>
+          <div class="col-md-6">
+            <p>Art enthusiasts can use this product at home or on the go. Users can search for art events anywhere.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Why</h2>
+          </div>
+          <div class="col-md-6">
+            <p>So more people can enjoy and appreciate Contemporary art and learn about artistic events happening around them.</p>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <picture>
+            <source srcset="img/artguide/responsive_mockup@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/responsive_mockup@2x.jpg" alt="Responsive App Mockup">
+          </picture>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Feature Requirements</h2>
+          </div>
+          <div class="col-md-6">
+            <p>User registration and login process to save and create a personalized art guide.</p>
+            <p>Search and sort feature for finding current events including exhibitions, openings and closings, and art fairs in any city.</p>
+            <p>Access comprehensive information about any event including event dates, images, press release, venue’s address, and opening hours.</p>
+            <p>Save an event listing to user's artguide.</p>
+            <p>Map feature to view the location of venues in order to plan a day of gallery hopping in advance.</p>
+            <p>Ability to contact a venue and book appointments online (if required by the venue).</p>
+            <p>Local editor’s recommendations feature for each city.</p>
+            <p>Share an exhibition listing with friends. Send by email, text message, or social media.</p>
+          </div>
+        </div>
+
+        <div class="row" style="background-color:#EEEEEE;">
+          <div class="col-md-6">
+            <h2>User Stories</h2>
+          </div>
+          <div class="col-md-6">
+            <p>As an artist, I want to be able to stay on top of upcoming exhibition openings in order to spend an evening with my peers and expand my professional network.</p>
+            <p>As an art collector, I want to be able to search for exhibitions in my city to find the next addition to my collection.</p>
+            <p>As an art enthusiast, I want to create a personalized art guide when I travel to a new city and view my guide on a map in order to explore the local art scene.</p>
+            <p>As an art lover, I want to be able to save exhibitions that I visit, so that I can easily revisit them and look up the participating artists to learn more about their work.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>User Flow</h2>
+          <picture>
+            <source srcset="img/artguide/artguide_userflow@1x.png" media="(max-width:767px)">
+            <img src="img/artguide/artguide_userflow@2x.png" alt="artguide Userflow">
+          </picture>
+        </div>
+
+        <div class="row">
+          <h2>Moodboard</h2>
+          <picture>
+            <source srcset="img/artguide/Moodborad_1@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/Moodborad_1@2x.jpg" alt="artguide Userflow">
+          </picture>
+        </div>
+        <div class="row">
+          <picture>
+            <source srcset="img/artguide/Moodborad_2@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/Moodborad_2@2x.jpg" alt="artguide Userflow">
+          </picture>
+        </div>
+
+        <div class="row">
+          <p>I picked the first moodboard for my redesign project. Exhibition spaces often have minimal design with white walls and blue-gray concrete floors to highlight the art on view. This color palette is a great option for my application
+            because it mostly uses neutral colors familiar to art professionals. I included black to increase contrast for legibility and accessibility reasons, while keeping the palette simple. Black is modern and trendy in the art world. White
+            evokes feelings of simplicity and communicates a calm and professional atmosphere. Additionally, blue-gray communicates serenity and relaxation. </p>
+        </div>
+
+
+        <div class="row">
+          <h2>Redesign</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Redesign_1@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Redesign_1@2x.jpg" alt="Redesign 1">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <p>Using icons and animation helps users quickly identify the features they need, while keeping the interface simple. </p>
+            <p>In the existing solution, features such as adding an event to artguide, sharing an event, as well as the complete press release are presented as text. It is difficult to identify these features as they are placed somewhere in the
+              middle of the page. By moving these features to the top of the page and displaying them in the form of icons, users can easily navigate the page.</p>
+            <p>The addition of animation makes the screen easier to understand. This slight change in size and color can quickly tell users that they’ve successfully added an event to their artguide. By organizing the information in sections, we
+              allow users to know where to direct their attention.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <p>In the existing solution, user needs to scroll through a list of hundreds of cities in order to view events in a particular city. In my redesign, I included an autocomplete search feature that makes searching much more usable than a
+              typical text field and submit button. This allows users to quickly autocomplete their search, saving time and providing insight into what search options are available. My goal was to offer a minimal and clean style that is consistent
+              with my moodboard.</p>
+          </div>
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Redesign_2@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Redesign_2@2x.jpg" alt="Redesign 2">
+            </picture>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Redesign_3@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Redesign_3@2x.jpg" alt="Redesign 3">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <p>In the existing design, there are two different menus with overlapping features. One of the menus is located in the middle of the screen that confuses users.</p>
+
+            <p>In my redesign, I consolidated the two menus into one to avoid confusion. I added a separate user profile icon that takes user to their personalized artguide and account details. </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <p>Currently, filtering and sorting are both accessible through a button that is labeled “category”. This has a negative impact on the usability of the product. In my design, I created two separate buttons with visual icons that allows
+              users to easily and quickly organize their search results.</p>
+
+            <p>The map feature is only available in the desktop version of the existing solution. This is a highly useful feature that lets users to view the location of venues when planning a day of gallery hopping in advance. Users find it helpful
+              to be able to toggle between the map and list view. </p>
+          </div>
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Redesign_4@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Redesign_4@2x.jpg" alt="Redesign 4">
+            </picture>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Designing for different breakpoints</h2>
+          <p>Throughout this project, I took a mobile-first approach. I designed my mobile breakpoint and then adapted content for tablet and desktop devices. Below you can see my low-fidelity wireframes for two different pages for mobile, tablet,
+            and
+            desktop breakpoints. I used these wireframes to create mockups for multiple screen sizes.</p>
+        </div>
+
+        <div class="row">
+          <picture>
+            <source srcset="img/artguide/Homepage_breakpoints@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/Homepage_breakpoints@2x.jpg" alt="Breakpoints for Homepage">
+          </picture>
+        </div>
+
+        <div class="row">
+          <picture>
+            <source srcset="img/artguide/event_breakpoints@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/event_breakpoints@2x.jpg" alt="Breakpoints for Evenet page">
+          </picture>
+        </div>
+
+        <div class="row">
+          <h2>Style Guide</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Color@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Color@2x.jpg" alt="Color Style Guide">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Icons@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Icons@2x.jpg" alt="Icons Style Guide">
+            </picture>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Typography@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Typography@2x.jpg" alt="Typography Style Guide">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/artguide/Forms@1x.jpg" media="(max-width:767px)">
+              <img src="img/artguide/Forms@2x.jpg" alt="Forms Style Guide">
+            </picture>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <picture>
+            <source srcset="img/artguide/artguide_mockup@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/artguide_mockup@2x.jpg" alt="Final Mockups">
+          </picture>
+        </div>
+
+        <div class="row">
+          <picture>
+            <source srcset="img/artguide/mockup_mobile@1x.jpg" media="(max-width:767px)">
+            <img src="img/artguide/mockup_mobile@2x.jpg" alt="Final Mockups">
+          </picture>
+        </div>
+
+        <div class="row" style="text-align:center">
+          <a href="https://invis.io/2811JPRX9GPJ" target="_blank" class="button">View prototype on Invision</a>
+        </div>
+        <div class="row" style="text-align:center">
+          <a href="index.html" class="button">Go back to homepage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- For the footer  -->
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <a href="mailto:jino.rahimi@gmail.com" class="button">Email me</a><!-- button or link label -->
+      <div>
+        <!--Social Media Layout and Placeholders-->
+        <a href="https://www.linkedin.com/in/jino-rahimi/" target="_blank">
+          <svg height="4%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="4%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="g5891">
+              <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#000000;" />
+              <g id="shapes">
+                <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
+                <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
+                  style="fill:#fff;fill-rule:nonzero;" />
+                <path
+                  d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                  id="path15" style="fill:#fff;fill-rule:nonzero;" />
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div>
+        <h5>Copyright Jino Rahimi, 2021</h5>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -133,6 +133,7 @@ a:active {
 
 .row {
   margin: 25px 0;
+  paddin: 0 15px;
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -210,6 +211,14 @@ nav>ul>li>a:active {
   width: 100%;
 }
 
+#cha-ching-page h2 {
+  color: #52933D;
+}
+
+#cha-ching-page h3 {
+  color: #52933D;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -221,6 +230,7 @@ Medium devices (640px and larger)
 
   .row {
     margin: 50px 0;
+    padding: 0 25px;
   }
 
   nav {
